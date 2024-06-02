@@ -8,9 +8,7 @@ const Store = () => {
     let [ iconView, setIconView ] = useState(defaultIconState);
 
     const onSwitch = () => {
-
-        setIconView( iconView = iconView === "view_module" ? "view_list" : "view_module");
-
+        setIconView(iconView = iconView === "view_module" ? "view_list" : "view_module");
     }
 
     const Component = iconView === "view_module" ? CardsView : ListView

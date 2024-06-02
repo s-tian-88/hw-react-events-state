@@ -8,7 +8,6 @@ const ProjectList = ({ projects }) => {
         <>
             { projects.map(item => {
                 const alt = item.match(/([^/]*).(png|jpg)/)[1]
-                console.log(item);
                 return <img key={ Math.random() } src={ item } alt={ alt } /> 
             }
             ) }
@@ -49,7 +48,6 @@ const Portfolio = () => {
     let [selected, setSelected] = useState(initialSelected);
 
     const onSelectFilter = (event) => { 
-
         setSelected(selected = event.target.innerText);
     };
 
